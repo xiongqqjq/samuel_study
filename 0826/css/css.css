@@ -1,0 +1,9 @@
+.box2 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    background-image: url(../../project/doctor/images/search.png);
+}
+h1 {
+    color: #000;
+}
