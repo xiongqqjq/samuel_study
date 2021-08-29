@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>伪元素</title>
+        <style>
+            a::before {
+                content: '⭐️';
+            }
+            a::after {
+                content: '❤';
+            }
+            div {
+                width: 400px;
+                height: 300px;
+                border: 1px solid black;
+            }
+            .box1::selection {
+                background-color: green;
+                color: pink;
+            }
+            .box1::first-letter {
+                font-size: 30px;
+            }
+
+            .box1::first-line {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="">我是一个超级链接</a></p>
+        <p><a href="">我是一个超级链接</a></p>
+        <p><a href="">我是一个超级链接</a></p>
+        <p><a href="">我是一个超级链接</a></p>
+        <div class="box1">
+            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+        </div>
+    </body>
+</html>

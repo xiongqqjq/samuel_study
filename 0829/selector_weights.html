@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>css权重</title>
+        <style>
+            #box1 #box2 p {
+                /*
+                (2, 0, 1) 
+                 */
+                color: red;
+            }
+            #box1 div.box2 #box3 p {
+                /*
+                (2, 1, 2) 
+                 */
+                color: green;
+            }
+            .box1 .box2 .box3 p {
+                /*
+                (0, 3, 1) 
+                 */
+                color: yellow;
+            }
+            .list li {
+                color: red;
+            }
+            .list .spec {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1" class="box1">
+            <div id="box2" class="box2">
+                <div id="box3" class="box3">
+                    <p>我是段落</p>
+                </div>
+            </div>
+        </div>
+        <ul class="list">
+            <li>列表项</li>
+            <li class="spec">列表项</li>
+            <li class="spec">列表项</li>
+            <li>列表项</li>
+        </ul>
+    </body>
+</html>
