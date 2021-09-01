@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>边距</title>
+        <style>
+            /* 竖直方向塌陷 已大数值为准 */
+            .box1 {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                margin-bottom: 30px;
+            }
+
+            .box2 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                margin-top: 40px;
+            }
+            .span1 {
+                margin-right: 30px;
+            }
+            .span2 {
+                margin-left: 40px;
+            }
+            body,
+            ul,
+            p,
+            li,
+            div {
+                margin: 0;
+                padding: 0;
+            }
+            section {
+                width: 600px;
+                height: 200px;
+                background-color: red;
+                /* 盒子水平居中 */
+                margin: 0 auto;
+                text-align: center;
+                line-height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="span1">我是一个span</span><span class="span2">我是一个span</span>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>列表4</li>
+        </ul>
+        <section>行胜于言</section>
+    </body>
+</html>

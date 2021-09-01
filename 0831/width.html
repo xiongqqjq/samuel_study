@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Width</title>
+        <style>
+            .box1 {
+                /* 宽度省略掉，由于div是块级元素，能够自动撑满 */
+                height: 100px;
+                background-color: orange;
+            }
+            a {
+                height: 100px;
+                background-color: red;
+                text-decoration: none;
+            }
+            .box2 {
+                /* 高度省略掉，能够被内容自动撑起来 */
+                width: 100px;
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <a href="">我是一个超级链接</a>
+        <div class="box2">我</div>
+    </body>
+</html>

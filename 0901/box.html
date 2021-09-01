@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>盒模型计算</title>
+        <style>
+            div {
+                padding: 0;
+                margin: 0;
+            }
+            .box {
+                width: 400px;
+                height: 300px;
+                padding: 10px;
+                border: 6px solid blue;
+                margin: 40px auto;
+            }
+            .box1 {
+                border: 6px solid green;
+                /* 实际占有的宽度 400px */
+                width: 388px;
+                /* 实际占有的高度200px */
+                height: 188px;
+                margin-bottom: 20px;
+            }
+            .box2 {
+                border: 6px solid orange;
+                width: 388px;
+                height: 48px;
+                padding: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+        </div>
+    </body>
+</html>
