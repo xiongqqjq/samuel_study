@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>浮动</title>
+        <style>
+            .box1 {
+                width: 600px;
+                height: 200px;
+                border: 1px solid #000;
+            }
+            .box1 .c1 {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                /* 浮动 */
+                float: left;
+            }
+            .box1 .c2 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                float: left;
+            }
+            .box1 .c3 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                float: left;
+            }
+            .box2 {
+                width: 250px;
+                height: 100px;
+                border: 1px solid #000;
+            }
+            .box2 .c1 {
+                width: 150px;
+                height: 100px;
+                background-color: orange;
+                /* 浮动的元素不再区分块级元素 行内元素 一定可以设置对应宽度和高度*/
+                float: left;
+            }
+            .box2 .c2 {
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                float: left;
+            }
+            .box2 .c3 {
+                width: 100px;
+                height: 50px;
+                background-color: blue;
+                float: left;
+            }
+            span {
+                float: left;
+                width: 100px;
+                height: 30px;
+                background-color: orange;
+                margin-right: 10px;
+            }
+
+            .box3 {
+                width: 600px;
+                height: 200px;
+                border: 1px solid #000;
+            }
+            .box3 .c1 {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                /* 浮动 */
+                float: right;
+            }
+            .box3 .c2 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                float: right;
+            }
+            .box3 .c3 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        <div class="box2">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <div class="box3">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </body>
+</html>
