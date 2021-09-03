@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>清除浮动</title>
+        <style>
+            /* 形成bfc  overflow: hidden*/
+            /* 设置clear:both */
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .clearfix {
+                margin-bottom: 10px;
+                margin-left: 20px;
+                /* overflow: hidden; */
+            }
+            p {
+                float: left;
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                margin-right: 20px;
+            }
+            /* .box2 { */
+            /* 清除别人对我的影响 */
+            /* margin-top: 10px; */
+            /* clear: both; */
+            /* } */
+
+            /* .clearfix::after { */
+            /* 清除浮动 */
+            /* content: ''; */
+            /* clear: both; */
+            /* display: block; */
+            /* } */
+
+            .box3 {
+                clear: both;
+            }
+            .h20 {
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clearfix">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="box3 h20"></div>
+        <div class="clearfix">
+            <p></p>
+            <p></p>
+        </div>
+    </body>
+</html>
