@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>相对定位</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            div {
+                width: 400px;
+                height: 400px;
+                border: 1px solid #000;
+                margin: 40px auto;
+            }
+            p {
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                /* 相对定位 */
+                /* 位置描述词 left right top bottom */
+                /* 值可以为负数 */
+                position: relative;
+                /* top: 100px; */
+                /* left: 100px; */
+                /* right: -50px; */
+                /* top: 100px; */
+                /* 本质在原来的位置 */
+                /* 会留在原来的位置 */
+                /* 不脱离标准流 */
+                top: 300px;
+                left: 400px;
+                margin-bottom: 100px;
+                /* 用途 */
+                /* 微调元素位置 */
+                /* 作为绝对定位的参考盒子 */
+            }
+            nav {
+                width: 960px;
+                height: 40px;
+                margin: 40px auto;
+            }
+            nav ul {
+                list-style: none;
+            }
+            nav ul li {
+                float: left;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+            }
+            nav ul li a {
+                display: block;
+                width: 120px;
+                height: 40px;
+                background-color: orange;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+            nav ul li a:hover {
+                border-top: 3px solid red;
+                position: relative;
+                top: -3px;
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p></p>
+            <h3>我是一个三级标题</h3>
+            <ul>
+                <li>列表</li>
+                <li>列表</li>
+                <li>列表</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+                <li>
+                    <a href="">网站栏栏目</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

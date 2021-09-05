@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>绝对定位</title>
+        <style>
+            .box {
+                position: absolute;
+                /* 脱离标准文档流 将释放自己的位置 */
+                /* 脱离标准文档流方法：浮动，绝对定位，固定定位 */
+                /* 绝对定位可以设置参考参考盒子 会以自己祖先元素中 离自己最近的拥有定位属性的盒子，当做基准点，这个盒子通常是相对定位的 这个性质也被叫做”子绝父相“ */
+                /* 用途 */
+                /* 压盖，遮罩 */
+                bottom: 0;
+                right: 0;
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+            }
+            .box1 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+            .box2 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position: absolute;
+                top: 300px;
+                left: 300px;
+            }
+            .box3 {
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <ul>
+            <li>
+                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+            </li>
+            <li>
+                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+            </li>
+            <li>
+                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+            </li>
+            <li>
+                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+            </li>
+        </ul>
+    </body>
+</html>
