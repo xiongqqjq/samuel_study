@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 去掉ul ol 小圆点 */
+ul, ol{
+    list-style: none;
+}
+/* 去掉超级了链接下划线 */
+a{
+    text-decoration: none;
+}
+/* 使用继承性，给body标签设置字体 */
+body{
+    font: normal 14px/25px '微软雅黑'
+}
+header{
+
+}
+
+header .header-top{
+    width: 1172px;
+    margin: 0 auto;
+    /* 清除浮动 */
+    overflow: hidden;
+}
+header .header-top .logo{
+    float: left;
+    padding-top: 39px;
+    width: 192px;
+    height: 63px;
+}
+header .header-top .logo h1{
+    width: 192px;
+    height: 63px;    
+}
+header .header-top .tool{
+    float: right;
+    padding-top: 35px;
+    width: 266px;
+    height: 67px;
+}
+header .header-top .tool .r1 .tel{
+    height: 25px;
+    width: 32px;
+}
+header .header-top .tool .r1 .tel_number{
+    height: 26px;
+    width: 150px;
+    font-size: 20px;
+    color: #00978E;
+    display: inline-block;
+    text-align: center;
+}
+header .header-top .tool .r1 .icon{
+    height: 27px;
+    width: 27px;
+}
+header .header-top .tool .r1 .chinese_icon{
+    margin-right: 12px;
+}
+
+header .header-top .tool .r2{
+    width: 264px;
+    height: 28px;
+    border: 1px solid #000;
+}
