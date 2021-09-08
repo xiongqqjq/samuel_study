@@ -29,6 +29,8 @@ header .header-top .logo{
     padding-top: 39px;
     width: 192px;
     height: 63px;
+    color: #015E58;
+    font-size: 20px;
 }
 header .header-top .logo h1{
     width: 192px;
@@ -96,4 +98,110 @@ header .header-top .tool .r2 button{
     position: relative;
     top: 4px;
     right: 4px;
+}
+header .main-nav{
+    /* 不用写宽度 自动就撑满了 */
+    height: 60px;
+    background-color: #00978E;
+    margin-top: 29px;
+}
+
+header .main-nav ul{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+header .main-nav ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    /* 行高等于盒子高 */
+    line-height: 60px;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+/* 交集选择器 */
+header .main-nav ul li.cur{
+    background-color: #015E58;
+}
+header .main-nav ul li a{
+    /* 转为块级元素 */
+    display: block;
+    width: 150px;
+    height: 60px;
+    color: white;
+}
+header .main-nav ul a:hover{
+    background-color: orange;
+}
+.banner{
+    position: relative;
+}
+.banner .banner-img{
+    width: 100%;
+
+}
+.banner .center{
+    position:absolute;
+    width: 1200px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+.banner .center .left-btn{
+    position: absolute;
+    width: 56px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, .3);
+    left:0;
+    top: 50%;
+    margin-top: -32px;
+}
+.banner .center .right-btn{
+    position: absolute;
+    width: 56px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, .3);
+    right:0;
+    top: 50%;
+    margin-top: -32px;
+}
+.banner .center h2{
+    position: absolute;
+    width: 480px;
+    height: 79px;
+    font-family: Helvetica;
+    font-size: 60px;
+    color: #015E58;
+    font-weight: normal;
+    top:50%;
+    margin-top: -79px;
+    left: 148px;
+}
+
+.banner ol{
+    position: absolute;
+    width: 120px;
+    height: 12px;
+    bottom: 20px;
+    /* 水平居中 */
+    left: 50%;
+    margin-left: -60px;
+}
+.banner ol li{
+    float: left;
+    width: 20px;
+    height: 12px;
+    background-color: white;
+    margin-right: 10px;
+}
+/* 最后一个没有margin */
+.banner ol li:last-child{
+    margin-right: 0px;
+}
+.banner ol li.cur{
+    width: 30px;
+    background-color: #00978E;
 }
