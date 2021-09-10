@@ -205,3 +205,34 @@ header .main-nav ul a:hover{
     width: 30px;
     background-color: #00978E;
 }
+/* 内容部分 */
+.content{
+    padding-top: 71px;
+}
+.content .useful-links{
+    width: 906px;
+    height: 147px;
+    margin: 0 auto;
+}
+.content .useful-links ul{
+    /* 清除浮动 */
+    overflow: hidden;
+}
+.content .useful-links ul li{
+    float: left;
+    width: 106px;
+    margin-right: 54px;
+}
+.content .useful-links ul li span{
+    /* 转块 不设置宽度 就相当于width属性为100%了，此时可以text-align:center居中*/
+    display: block;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+    line-height: 40px;
+}
+.content .useful-links ul li:last-child{
+    margin-right:0px;
+}
