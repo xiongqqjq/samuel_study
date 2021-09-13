@@ -236,3 +236,92 @@ header .main-nav ul a:hover{
 .content .useful-links ul li:last-child{
     margin-right:0px;
 }
+
+.content .news-and-notice{
+    width: 1200px;
+    height: 375px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+
+.content .news-and-notice .news{
+    float: left;
+    width: 878px;
+    height: 375px;
+}
+
+.content .news-and-notice .notice{
+    float: left;
+    width: 322px;
+    height: 375px;
+}
+
+.content .news-and-notice .news h3{
+    height: 21px;
+    margin-bottom: 27px;
+}
+
+.content .news-and-notice .news .news-content .hot-news{
+    float: left;
+    width: 422px;
+    height: 328px;
+    margin-right: 15px;
+    position: relative;
+}
+.content .news-and-notice .news .news-content .hot-news .info{
+    position: absolute;
+    width: 368px;
+    height: 18px;
+    left: 27px;
+    bottom: 11px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+}
+.content .news-and-notice .news .news-content ul{
+    float: left;
+    width: 400px;
+    height: 328px;
+}
+.content .news-and-notice .news .news-content ul li{
+    line-height: 40px;
+}
+
+.content .news-and-notice .news .news-content ul li a{
+    float: left;
+    color: #000000;
+}
+.content .news-and-notice .news .news-content ul li.cur a{
+    color: #00978E;
+    font-weight: bold;
+}
+
+.content .news-and-notice .news .news-content ul li span{
+    float: right;
+}
+
+.content .news-and-notice .notice  h3{
+    height: 21px;
+    margin-bottom: 16px;
+}
+.content .news-and-notice .notice  ol li{
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.content .news-and-notice .notice  ol li .number{
+    float: left;
+    width: 53px;
+    height: 57px;
+    background-color: #00978E ;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 57px;
+    margin-right: 9px;
+}
+.content .news-and-notice .notice  ol li dl dt a{
+    color: #000000;
+}
+.content .news-and-notice .notice  ol li dl dd a{
+    color: #000000;
+}
