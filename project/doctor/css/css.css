@@ -34,7 +34,11 @@ header .header-top .logo{
 }
 header .header-top .logo h1{
     width: 192px;
-    height: 63px;    
+    height: 63px;
+    background-image: url(../images/logo-logo.png);  
+    /* 段首缩进设置为负数时，是一个很巧妙的做法来隐藏文字 */
+    text-indent: -999px; 
+    background-size: cover; 
 }
 header .header-top .tool{
     float: right;
@@ -154,22 +158,32 @@ header .main-nav ul a:hover{
 .banner .center .left-btn{
     position: absolute;
     width: 56px;
-    height: 64px;
+    height: 74px;
     background-color: rgba(0, 0, 0, .3);
     left:0;
     top: 50%;
     margin-top: -32px;
     border-radius: 6px;
+    background-image: url(../images/轮播图切换按钮prev-左箭头.png);
+    background-size: cover;
 }
 .banner .center .right-btn{
     position: absolute;
     width: 56px;
-    height: 64px;
+    height: 74px;
     background-color: rgba(0, 0, 0, .3);
     right:0;
     top: 50%;
     margin-top: -32px;
     border-radius: 6px;
+    background-image: url(../images/轮播图切换按钮next-右箭头.png);
+    background-size: cover;
+}
+.banner .center .left-btn:hover{
+    background-image:url(../images/轮播图切换按钮prev-hover-左箭头hover.png)
+}
+.banner .center .right-btn:hover{
+    background-image:url(../images/轮播图切换按钮next-hover-右箭头hover.png)
 }
 .banner .center h2{
     position: absolute;

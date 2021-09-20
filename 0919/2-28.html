@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Study</title>
+        <style>
+            div.box1 {
+                width: 400px;
+                height: 200px;
+                overflow: hidden;
+                border: 1px solid #000;
+                position: relative;
+            }
+            div.box-radial {
+                border: 1px solid #000;
+                position: absolute;
+                bottom: 0;
+            }
+            div.box2 {
+                width: 400px;
+                height: 200px;
+                background-color: purple;
+                border-radius: 200px 200px 0 0;
+            }
+            div.box3 {
+                background-color: blue;
+                width: 340px;
+                height: 170px;
+                border-radius: 170px 170px 0 0;
+                margin-left: 30px;
+            }
+            div.box4 {
+                background-color: green;
+                width: 280px;
+                height: 140px;
+                border-radius: 140px 140px 0 0;
+                margin-left: 60px;
+            }
+            div.box5 {
+                background-color: yellow;
+                width: 220px;
+                height: 110px;
+                border-radius: 110px 110px 0 0;
+                margin-left: 90px;
+            }
+            div.box6 {
+                background-color: orange;
+                width: 160px;
+                height: 80px;
+                border-radius: 80px 80px 0 0;
+                margin-left: 120px;
+            }
+            div.box7 {
+                background-color: white;
+                width: 100px;
+                height: 50px;
+                border-radius: 50px 50px 0 0;
+                margin-left: 150px;
+            }
+            div.box-2-1 {
+                width: 400px;
+                height: 200px;
+                overflow: hidden;
+                border: 1px solid #000;
+                position: relative;
+                margin-top: 200px;
+            }
+            div.box-radial-2 {
+                border: 30px solid purple;
+                position: absolute;
+                border-radius: 50% 50% 50% 50%;
+            }
+            div.box-2-2 {
+                width: 340px;
+                height: 340px;
+                bottom: -200px;
+            }
+            div.box-2-3 {
+                border-color: blue;
+                width: 280px;
+                height: 280px;
+                bottom: -170px;
+                left: 30px;
+            }
+            div.box-2-4 {
+                border-color: green;
+                width: 220px;
+                height: 220px;
+                bottom: -140px;
+                left: 60px;
+            }
+            div.box-2-5 {
+                border-color: yellow;
+                width: 160px;
+                height: 160px;
+                bottom: -110px;
+                left: 90px;
+            }
+            div.box-2-6 {
+                border-color: orange;
+                width: 100px;
+                height: 100px;
+                bottom: -80px;
+                left: 120px;
+            }
+            div.box-3-1 {
+                margin-top: 200px;
+                width: 400px;
+                height: 200px;
+                overflow: hidden;
+                border: 1px solid red;
+            }
+            div.box-3-2 {
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                border: 1px solid red;
+                background-image: radial-gradient(
+                    50% 50%,
+                    white 50%,
+                    orange 50%,
+                    orange 60%,
+                    yellow 60%,
+                    yellow 70%,
+                    green 70%,
+                    green 80%,
+                    blue 80%,
+                    blue 90%,
+                    purple 90%,
+                    purple 100%
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="box2 box-radial"></div>
+            <div class="box3 box-radial"></div>
+            <div class="box4 box-radial"></div>
+            <div class="box5 box-radial"></div>
+            <div class="box6 box-radial"></div>
+            <div class="box7 box-radial"></div>
+        </div>
+        <div class="box-2-1">
+            <div class="box-2-2 box-radial-2"></div>
+            <div class="box-2-3 box-radial-2"></div>
+            <div class="box-2-4 box-radial-2"></div>
+            <div class="box-2-5 box-radial-2"></div>
+            <div class="box-2-6 box-radial-2"></div>
+        </div>
+
+        <div class="box-3-1">
+            <div class="box-3-2"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>背景裁切</title>
+        <!-- 兼容到ie9 -->
+        <style>
+            .box1 {
+                /* 无裁切 */
+                width: 900px;
+                height: 700px;
+                border: 10px dotted #000;
+                background-image: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                padding: 60px;
+                margin-bottom: 10px;
+            }
+            .box2 {
+                /* 裁切到padding区域  此时就不会在dotted dashed边框渲染*/
+                width: 900px;
+                height: 700px;
+                border: 10px dotted #000;
+                background-image: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                padding: 60px;
+                margin-bottom: 10px;
+                background-clip: padding-box;
+            }
+            .box3 {
+                /* 裁切到content区域 不会在padding区域渲染 */
+                width: 900px;
+                height: 700px;
+                border: 10px dotted #000;
+                background-image: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                padding: 60px;
+                margin-bottom: 10px;
+                background-clip: content-box;
+                background-size: 100px auto;
+            }
+            .box4 {
+                /* 裁切到content区域 不会在padding区域渲染 */
+                width: 900px;
+                height: 700px;
+                border: 10px dotted #000;
+                background-image: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                padding: 60px;
+                margin-bottom: 10px;
+                background-clip: content-box;
+                background-size: 100px auto;
+                /* 背景起源 */
+                background-origin: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </body>
+</html>

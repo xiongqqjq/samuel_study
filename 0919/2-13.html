@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Study</title>
+        <style>
+            .border,
+            .padding,
+            .content {
+                /*给最外层的div设置样式*/
+                width: 300px;
+                height: 300px;
+                float: left;
+                margin-left: 50px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 30px;
+            }
+            .div1,
+            .div2,
+            .div3 {
+                /*放置背景图片的div样式*/
+                width: 220px;
+                height: 200px;
+                border: 10px solid rgba(0, 255, 0, 0.3);
+                padding: 50px;
+                background-image: url('http://climg.mukewang.com/582c316e0001fd6507000210.jpg');
+                margin-top: 50px;
+            }
+            .border:hover div,
+            .padding:hover div,
+            .content:hover div {
+                display: block;
+            }
+            div div {
+                display: none;
+            }
+            .padding:hover div {
+                background-clip: padding-box;
+            }
+            .content:hover div {
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border">
+            <a href="">border-box</a>
+            <div class="div1"></div>
+        </div>
+        <div class="padding">
+            <a href="">padding-box</a>
+            <div class="div2"></div>
+        </div>
+        <div class="content">
+            <a href="">content-box</a>
+            <div class="div3"></div>
+        </div>
+    </body>
+</html>
