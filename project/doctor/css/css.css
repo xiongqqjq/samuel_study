@@ -68,6 +68,7 @@ header .header-top .tool .r2{
     width: 264px;
     height: 28px;
     border: 1px solid rgba(202,202,202,0.60);
+    border-radius: 4px;
 }
 header .header-top .tool .r2 input{
     float: left;
@@ -158,6 +159,7 @@ header .main-nav ul a:hover{
     left:0;
     top: 50%;
     margin-top: -32px;
+    border-radius: 6px;
 }
 .banner .center .right-btn{
     position: absolute;
@@ -167,6 +169,7 @@ header .main-nav ul a:hover{
     right:0;
     top: 50%;
     margin-top: -32px;
+    border-radius: 6px;
 }
 .banner .center h2{
     position: absolute;
@@ -196,6 +199,7 @@ header .main-nav ul a:hover{
     height: 12px;
     background-color: white;
     margin-right: 10px;
+    border-radius: 4px;
 }
 /* 最后一个没有margin */
 .banner ol li:last-child{
@@ -208,6 +212,12 @@ header .main-nav ul a:hover{
 /* 内容部分 */
 .content{
     padding-top: 71px;
+}
+.content h3{
+    border-left: 8px solid #00978E;
+    padding-left: 10px;
+    height: 22px;
+    line-height: 22px;
 }
 .content .useful-links{
     width: 906px;
@@ -257,8 +267,7 @@ header .main-nav ul a:hover{
 }
 
 .content .news-and-notice .news h3{
-    height: 21px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .content .news-and-notice .news .news-content .hot-news{
@@ -301,8 +310,7 @@ header .main-nav ul a:hover{
 }
 
 .content .news-and-notice .notice  h3{
-    height: 21px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .content .news-and-notice .notice  ol li{
     overflow: hidden;
@@ -386,6 +394,7 @@ header .main-nav ul a:hover{
     line-height: 34px;
     margin-right: 21px;
     margin-bottom: 25px;
+    border-radius: 4px;
 }
 .content .dep-info .center .col li:nth-child(2n){
     margin-right: 0px;

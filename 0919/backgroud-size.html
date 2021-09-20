@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>背景尺寸</title>
+        <!-- 兼容到ie9 -->
+        <style>
+            .box1 {
+                width: 300px;
+                height: 100px;
+                border: 1px solid #000;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                background-size: 100px auto;
+                margin-bottom: 10px;
+            }
+            .box2 {
+                width: 300px;
+                height: 100px;
+                border: 1px solid #000;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                background-size: 50% auto;
+                margin-bottom: 10px;
+            }
+            .box3 {
+                width: 300px;
+                height: 100px;
+                border: 1px solid #000;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                background-size: 50% 50%;
+                margin-bottom: 10px;
+            }
+            /* contain */
+            /* 图片一定会尽量放置在容器中 */
+            .box4 {
+                width: 400px;
+                height: 300px;
+                border: 1px solid #000;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                background-size: contain;
+                margin-bottom: 10px;
+                background-repeat: no-repeat;
+            }
+            /* cover */
+            /* 容器不留白 */
+            .box5 {
+                width: 400px;
+                height: 300px;
+                border: 1px solid #000;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+                background-size: cover;
+                margin-bottom: 10px;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>图片平铺</title>
+        <style>
+            div {
+                width: 900px;
+                height: 900px;
+                border: 1px solid #000;
+                margin-bottom: 10px;
+                background: url(http://climg.mukewang.com/58dc9d360001d65806500650.jpg);
+            }
+            .box1 {
+                /* 默认平铺 */
+                background-repeat: repeat;
+            }
+            .box2 {
+                /* 只在水平方向平铺 */
+                background-repeat: repeat-x;
+            }
+            .box3 {
+                /* 只在竖直方向平铺 */
+                background-repeat: repeat-y;
+            }
+            .box4 {
+                /* 不平铺 */
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </body>
+</html>
