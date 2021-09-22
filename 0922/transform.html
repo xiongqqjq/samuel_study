@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>旋转</title>
+        <style>
+            img {
+                border: 1px solid red;
+            }
+            .pic1 {
+                /* 旋转度数 */
+                transform: rotate(30deg);
+            }
+            .pic2 {
+                transform: rotate(60deg);
+            }
+            .pic3 {
+                transform: rotate(90deg);
+            }
+            .pic4 {
+                transform: rotate(180deg);
+            }
+            .pic6 {
+                /* 以左上角为中心点进行旋转 */
+                transform-origin: 0 0;
+                transform: rotate(30deg);
+            }
+            /* 缩放变形 */
+            .pic7 {
+                /* 数值小于1则为缩小 */
+                transform: scale(0.5);
+            }
+            .pic8 {
+                /* 数值大于1则为放大 */
+                transform: scale(1.2);
+            }
+            .pic9:hover {
+                transform-origin: 0 100%;
+                transform: scale(2);
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic1" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic2" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic3" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic4" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic5" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic6" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic7" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic8" />
+        </p>
+        <p>
+            <img src="http://climg.mukewang.com/582c37e50001b08102000065.jpg" alt="" class="pic9" />
+        </p>
+    </body>
+</html>
