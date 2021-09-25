@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>正方体</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            section {
+                width: 200px;
+                height: 200px;
+                margin: 100px auto;
+                perspective: 10000px;
+            }
+            .box {
+                width: 200px;
+                height: 200px;
+                /* border: 1px solid #000; */
+                perspective: 10000px;
+                position: relative;
+                /* 设置变形类型，保留它内部的3D效果 */
+                /* 这个盒子又是舞台，又是演员，这个box整体带着里面的p旋转 */
+                transform-style: preserve-3d;
+                transition: transform 10s ease 0s;
+            }
+            section:hover .box {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+
+            .box p {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+            }
+            .box p:nth-child(1) {
+                background-color: rgba(20, 161, 23, 0.4);
+                /* 前面 */
+                transform: translateZ(100px);
+            }
+            .box p:nth-child(2) {
+                background-color: rgba(20, 156, 161, 0.4);
+                /* 顶面 */
+                transform: rotateX(90deg) translateZ(100px);
+            }
+            .box p:nth-child(3) {
+                background-color: rgba(152, 179, 110, 0.4);
+                /* 背面 */
+                transform: translateZ(-100px);
+            }
+            .box p:nth-child(4) {
+                background-color: rgba(177, 45, 56, 0.4);
+                /* 底面 */
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+            .box p:nth-child(5) {
+                background-color: rgba(207, 152, 33, 0.4);
+                /* 左面 */
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+            .box p:nth-child(6) {
+                background-color: rgba(195, 71, 206, 0.4);
+                /* 右面 */
+                transform: rotateY(90deg) translateZ(100px);
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="box">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </section>
+    </body>
+</html>

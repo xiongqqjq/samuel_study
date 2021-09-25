@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>过渡效果实战课</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .box {
+                width: 1200px;
+                overflow: hidden;
+                margin: 40px auto;
+            }
+            .box ul {
+                list-style: none;
+            }
+            .box ul li {
+                float: left;
+                width: 380px;
+                height: 210px;
+                margin-right: 20px;
+                position: relative;
+            }
+            .box ul li img {
+                width: 380px;
+                height: 210px;
+            }
+            .box ul li .info {
+                position: absolute;
+                width: 370px;
+                height: 30px;
+                line-height: 30px;
+                bottom: 0px;
+                padding-left: 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                /* 透明度 */
+                opacity: 0;
+                transition: opacity 1s ease 0s;
+            }
+            .box ul li:hover .info {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <ul>
+                <li>
+                    <img src="images/0.jpg" alt="" />
+                    <div class="info">北京的故宫</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/1.jpg" alt="" />
+                    <div class="info">十七孔桥</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/2.jpg" alt="" />
+                    <div class="info">国家大剧院</div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
