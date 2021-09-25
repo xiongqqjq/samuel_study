@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>空间移动</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            p {
+                height: 200px;
+                width: 200px;
+                border: 1px solid #000;
+                background-color: orange;
+            }
+            .box1 {
+                /* 3D 元素距视图的距离 */
+                perspective: 200px;
+                width: 202px;
+                height: 202px;
+                border: 1px solid #000;
+                margin: 50px auto;
+                margin-bottom: 200px;
+            }
+            .box1 p {
+                transform: rotateX(20deg) translateX(10px) translateY(10px) translateZ(10px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <p></p>
+        </div>
+    </body>
+</html>
