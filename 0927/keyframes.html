@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>动画</title>
+        <style>
+            /* 永远执行infinite */
+            /* alternate 偶数次自动逆行执行 */
+            /* forwards 停止在最后结束的状态 */
+            .box1 {
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+                animation: r 1s linear 0s infinite alternate;
+            }
+            @-webkit-keyframes r {
+                from {
+                    transform: rotate(0);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .box2 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                animation: movelr 2s linear 0s infinite alternate;
+            }
+            @-webkit-keyframes movelr {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(1000px);
+                }
+            }
+            .box3 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                animation: changeToCircle 2s linear 0s forwards;
+            }
+            @-webkit-keyframes changeToCircle {
+                from {
+                    border-radius: 0;
+                }
+                to {
+                    border-radius: 50%;
+                }
+            }
+            .box4 {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                animation: changeColor 3s linear 0s alternate infinite;
+            }
+            @-webkit-keyframes changeColor {
+                0% {
+                    background-color: red;
+                }
+                20% {
+                    background-color: yellow;
+                }
+                40% {
+                    background-color: green;
+                }
+                60% {
+                    background-color: purple;
+                }
+                80% {
+                    background-color: pink;
+                }
+                100% {
+                    background-color: blue;
+                }
+            }
+            .box5 {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+                animation: flash 3s linear 0s alternate infinite;
+            }
+            @-webkit-keyframes flash {
+                0% {
+                    transform: translate(0, 0);
+                }
+                25% {
+                    transform: translate(100px, 0);
+                }
+                50% {
+                    transform: translate(100px, 100px);
+                }
+                75% {
+                    transform: translate(0, 100px);
+                }
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </body>
+</html>
