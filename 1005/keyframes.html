@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>动画实战</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .dengpao {
+                position: absolute;
+                left: 300px;
+                top: 300px;
+            }
+            .guang {
+                position: absolute;
+                left: 225px;
+                top: 220px;
+                animation: flash 1s ease 0s infinite alternate;
+            }
+            @-webkit-keyframes flash {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+            .huojian {
+                position: absolute;
+                top: 300px;
+                left: 800px;
+                animation: zd 0.5s linear 0s infinite alternate;
+            }
+            @-webkit-keyframes zd {
+                from {
+                    transform: translateX(-20px) translateY(-20px);
+                }
+                to {
+                    transform: translateX(20px) translateY(20px);
+                }
+            }
+            .line1 {
+                width: 2px;
+                height: 166px;
+                background-color: blue;
+                position: absolute;
+                top: 300px;
+                left: 800px;
+                animation: yd 1s linear 0s infinite;
+                opacity: 0;
+            }
+            .line2 {
+                width: 2px;
+                height: 200px;
+                background-color: blue;
+                position: absolute;
+                top: 300px;
+                left: 850px;
+                animation: yd 1s linear 0.2s infinite;
+                opacity: 0;
+            }
+            .line3 {
+                width: 2px;
+                height: 210px;
+                background-color: blue;
+                position: absolute;
+                top: 300px;
+                left: 900px;
+                animation: yd 1s linear 0.35s infinite;
+                opacity: 0;
+            }
+            .line4 {
+                width: 2px;
+                height: 180px;
+                background-color: blue;
+                position: absolute;
+                top: 300px;
+                left: 950px;
+                animation: yd 1s linear 0.12-s infinite;
+                opacity: 0;
+            }
+            .line5 {
+                width: 2px;
+                height: 166px;
+                background-color: blue;
+                position: absolute;
+                top: 300px;
+                left: 1000px;
+                animation: yd 1s linear 0.5s infinite;
+                opacity: 0;
+            }
+            @-webkit-keyframes yd {
+                0% {
+                    transform: rotate(45deg) translateY(-200px);
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    transform: rotate(45deg) translateY(200px);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img class="dengpao" src="images/dengpao.png" alt="" />
+        <img class="guang" src="images/guang.png" alt="" />
+        <img class="huojian" src="images/huojian.png" alt="" />
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line5"></div>
+    </body>
+</html>

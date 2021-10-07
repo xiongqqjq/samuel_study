@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Study</title>
+        <style>
+            div {
+                font-family: 'Microsoft Yahei';
+                font-size: 60px;
+                font-weight: bold;
+                line-height: 600px;
+                position: absolute;
+                top: -1000px;
+                right: 0;
+                left: 0;
+                width: 800px;
+                height: 600px;
+                margin: auto;
+                text-align: center;
+                border: 5px solid #000;
+                border-radius: 50%;
+                animation-name: disp;
+                animation-duration: 1s;
+                /*此处写代码*/
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes disp {
+                from {
+                    top: -1000px;
+                }
+                to {
+                    top: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>大家好，欢迎来到慕课网！</div>
+    </body>
+</html>
