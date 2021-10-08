@@ -474,24 +474,24 @@
 .jjzyx .bd{
     padding-top: 32px;
 }
-.jjzyx .bd ul li{
+.jjzyx .bd>ul>li{
     float: left;
     margin-right: 32px;
     margin-bottom: 32px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08);
 }
-.jjzyx .bd ul li:hover{
+.jjzyx .bd>ul>li:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
 }
-.jjzyx .bd ul li:nth-child(3), .jjzyx .bd ul li:nth-child(7){
+.jjzyx .bd>ul>li:nth-child(3), .jjzyx .bd>ul>li:nth-child(7){
     margin-right: 0px;
 }
-.jjzyx .bd ul li.big-grid{
+.jjzyx .bd>ul>li.big-grid{
     width: 560px;
     height: 270px;
     position: relative;
 }
-.jjzyx .bd ul li.big-grid .info{
+.jjzyx .bd>ul>li.big-grid .info{
     position: absolute;
     width: 560px;
     height: 103px;
@@ -502,7 +502,7 @@
     box-sizing: border-box;
     line-height: 26px;
 }
-.jjzyx .bd ul li .tag{
+.jjzyx .bd>ul>li .tag{
     position:absolute;
     width: 74px;
     height: 40px;
@@ -513,24 +513,60 @@
     line-height: 40px;
     text-align: center;
 }
-.jjzyx .bd ul li.pro-grid{
+.jjzyx .bd>ul>li.pro-grid{
     width: 264px;
     height: 270px;
 }
-.jjzyx .bd ul li.pro-grid .picbox{
+.jjzyx .bd>ul>li.pro-grid .picbox{
     position: relative;
     height: 184px;
 }
-.jjzyx .bd ul li.pro-grid .picbox .tag{
+.jjzyx .bd>ul>li.pro-grid .picbox .tag{
     bottom: 0px;    
 }
-.jjzyx .bd ul li.pro-grid .wordbox{
+.jjzyx .bd>ul>li.pro-grid .wordbox{
     padding: 14px;
     font-size: 14px;
     color: #1C1F21;
     line-height: 22px;
 }
-.jjzyx .bd ul li.more-grid{
+.jjzyx .bd>ul>li.more-grid{
     width: 264px;
     height: 270px;
+    background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
+    padding-top: 46px;
+    box-sizing: border-box;
+    position: relative;
+}
+.jjzyx .bd>ul>li.more-grid p{
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    font-size: 15px;
+}
+.jjzyx .bd>ul>li.more-grid .iconfont{
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    width: 48px;
+    height: 48px;
+    left: 50%;
+    margin-left: -24px;
+    top: 118px;
+}
+.jjzyx .bd>ul>li.more-grid ul{
+    margin-top: 112px;
+    padding-left: 20px;
+}
+.jjzyx .bd>ul>li.more-grid ul li{
+    float: left;
+    color: white;
+    font-size: 15px;
+    border-right: 1px solid white;
+    padding: 0 12px;
+    height: 22px;
+    line-height: 22px;  
+}
+.jjzyx .bd>ul>li.more-grid ul li:last-child{
+    border-right: none;
 }
