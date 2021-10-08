@@ -26,6 +26,7 @@
 .site-head .topbar .shortcut-links>ul>li.have-menu{
     padding-right: 12px;
     position:relative;
+
 }
 .site-head .topbar .shortcut-links>ul>li.have-menu .arrow{
     position: absolute;
@@ -115,6 +116,7 @@
 .site-head .main-nav ul>li.have-menu{
     padding-right: 16px;
     position: relative;
+    z-index: 9999
 }
 .site-head .main-nav ul li a{
     line-height: 40px;
@@ -403,13 +405,15 @@
 .xxsw .hd{
     margin-bottom: 32px;
 }
-.xxsw .hd h2{
-    float: left;
+.content-part h2{
     font-size: 36px;
     font-weight: bold;
     color: #1C1F21;
 }
-.xxsw .hd em{
+.xxsw .hd h2{
+    float: left;
+}
+.content-part em{
     float: left;
     position: relative;
     top: 20px;
@@ -434,4 +438,99 @@
 }
 .xxsw ul li:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+.jjzyx{
+    height: 698px;
+    padding-top: 40px;
+}
+.jjzyx .hd h2{
+    float: left;
+}
+.jjzyx .hd nav{
+    float: right;
+    width: 480px;
+}
+.jjzyx .hd nav ul{
+    padding-top: 16px;
+}
+.jjzyx .hd nav ul li{
+    float: left;
+    margin-right: 16px;
+    font-size: 14px;
+}
+.jjzyx .hd nav ul li:last-child{
+    margin-right: 0px;
+}
+.jjzyx .hd nav ul li a{
+    color: rgba(0,0,0,0.85);
+}
+.jjzyx .hd nav ul li.current{
+    border-bottom: 4px solid #20BD9A;
+    padding-bottom: 4px;
+}
+.jjzyx .hd nav ul li.current a{
+    color: #20BD9A;
+}
+.jjzyx .bd{
+    padding-top: 32px;
+}
+.jjzyx .bd ul li{
+    float: left;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08);
+}
+.jjzyx .bd ul li:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+.jjzyx .bd ul li:nth-child(3), .jjzyx .bd ul li:nth-child(7){
+    margin-right: 0px;
+}
+.jjzyx .bd ul li.big-grid{
+    width: 560px;
+    height: 270px;
+    position: relative;
+}
+.jjzyx .bd ul li.big-grid .info{
+    position: absolute;
+    width: 560px;
+    height: 103px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    bottom: 0;
+    padding: 30px 26px;
+    box-sizing: border-box;
+    line-height: 26px;
+}
+.jjzyx .bd ul li .tag{
+    position:absolute;
+    width: 74px;
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    bottom: 103px;
+    left: 0px;
+    line-height: 40px;
+    text-align: center;
+}
+.jjzyx .bd ul li.pro-grid{
+    width: 264px;
+    height: 270px;
+}
+.jjzyx .bd ul li.pro-grid .picbox{
+    position: relative;
+    height: 184px;
+}
+.jjzyx .bd ul li.pro-grid .picbox .tag{
+    bottom: 0px;    
+}
+.jjzyx .bd ul li.pro-grid .wordbox{
+    padding: 14px;
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+}
+.jjzyx .bd ul li.more-grid{
+    width: 264px;
+    height: 270px;
 }
